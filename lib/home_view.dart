@@ -24,9 +24,14 @@ class _HomeViewState extends State<HomeView> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
-              'You can push this button many times',
-              style: TextStyle(fontSize: 16),
+            Column(
+              children: [
+                Text(
+                  'You can push this button many times',
+                  style: TextStyle(fontSize: 16),
+                ),
+                Text('Increase or Decrease', style: TextStyle(fontSize: 16)),
+              ],
             ),
             Text(
               "${_counter}",
